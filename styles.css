@@ -1,0 +1,106 @@
+:root {
+  --container-width: 119rem;
+  --gutter: 2rem;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-blue: #2374e1;
+  --color-light-blue: #1d9bf0;
+  --color-dark-blue: #0a66c2;
+  --color-darker-blue: #143ce8;
+  --color-red: #ff0000;
+  --color-green: #03a696;
+  --color-grey: #f6f6f6;
+  --color-dark-green: #42959b;
+  --color-background: var(--color-white);
+  --color-text: var(--color-black);
+  --color-box-img: var(--color-black);
+  --color-link-bg: var(--color-black);
+  --color-input-border: var(--color-black);
+  --font-family-raleway: "Raleway", sans-serif;
+  --font-family-poppins: "Poppins", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-size-70: 7rem;
+  --font-size-65: 6.5rem;
+  --font-size-40: 4rem;
+  --font-size-38: 3.8rem;
+  --font-size-24: 2.4rem;
+  --font-size-22: 2.2rem;
+  --font-size-20: 2rem;
+  --font-size-18: 1.8rem;
+  --font-size-15: 1.5rem;
+  --transition-timing: 0.3s;
+}
+
+/* Start CSS Reset  */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+ol,
+ul {
+  list-style: none;
+}
+/* End CSS Reset */
+body {
+  font-size: 1.6rem;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-family-raleway);
+}
+.container {
+  margin: 0 auto;
+  max-width: var(--container-width);
+}
+
+/* Start Header Styles */
+.header {
+  position: relative;
+  padding: 3rem 0; /*#NOTE: It makes more sense to give the padding the parent than each children element*/
+  display: flex;
+  justify-content: center; /*#NOTE: it fix the bug of the border not taking the full width as it centers it  */
+}
+.header::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  height: 100%;
+  width: 100vw;
+  border-bottom: 0.1rem solid var(--color-input-border);
+  z-index: -1;
+}
+.navigation__list {
+  display: flex;
+  gap: 2rem;
+}
+.navigation__link:link,
+.navigation__link:visited {
+  font-weight: var(--font-weight-semi-bold);
+}
+.navigation__link:hover,
+.navigation__link:active {
+  text-decoration: underline;
+  color: var(--color-text);
+}
+/* END Header Styles */
