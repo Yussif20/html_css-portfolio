@@ -77,9 +77,9 @@ body {
 /* Start Header Styles */
 .header {
   position: relative;
-  padding: 3rem 0; /*#NOTE: It makes more sense to give the padding the parent than each children element*/
+  padding: 3rem 0; /* #NOTE: It makes more sense to give the padding the parent than each children element*/
   display: flex;
-  justify-content: center; /*#NOTE: it fix the bug of the border not taking the full width as it centers it  */
+  justify-content: center; /* #NOTE: it fix the bug of the border not taking the full width as it centers it  */
 }
 .header::before {
   position: absolute;
@@ -104,3 +104,44 @@ body {
   color: var(--color-text);
 }
 /* END Header Styles */
+/* Toggle */
+.toggle {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+}
+.toggle-title {
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weight-medium);
+}
+.toggle__checkbox {
+  display: none;
+}
+.toggle__label {
+  position: relative;
+  display: block;
+  background-color: var(--color-black);
+  width: 4.5rem;
+  height: 2.1rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  padding: 0.3rem 0.4rem;
+  transition: 0.3s;
+}
+.toggle__label::after {
+  content: "";
+  transition: 0.3s;
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background-color: var(--color-white);
+}
+.toggle__checkbox:checked + .toggle__label {
+  background-color: var(--color-white);
+}
+.toggle__checkbox:checked + .toggle__label::after {
+  background-color: var(--color-green);
+  transform: translateX(2.1rem);
+}
+/* End Toggle  */
