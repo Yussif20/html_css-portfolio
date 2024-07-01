@@ -145,3 +145,53 @@ body {
   transform: translateX(2.1rem);
 }
 /* End Toggle  */
+/* General styles */
+.section {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: start;
+}
+/* General styles end */
+/* Bio  */
+.bio {
+  column-gap: 7.4rem;
+  grid-template-columns: 1fr 1fr;
+}
+.bio__heading {
+  font-size: var(--font-size-70);
+  font-weight: var(--font-weight-bold);
+}
+.bio__objective {
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-20);
+  font-weight: var(--font-weight-regular);
+  margin: 3rem 0 8rem;
+}
+.bio__name {
+  font-weight: var(--font-weight-semi-bold);
+}
+.bio__github,
+.bio__linkedin {
+  font-size: var(--font-size-24);
+  color: gray;
+}
+.bio__github:hover {
+  color: #171515;
+}
+.bio__linkedin:hover {
+  color: #0a66c2;
+}
+.bio__links {
+  font-size: 2.4rem;
+  font-weight: var(--font-weight-semi-bold);
+}
+.say-hi-link {
+  background-color: var(--color-link-bg);
+  color: var(--color-white);
+  padding: 0.7rem 4.7rem;
+}
+.find-out-link {
+  padding: 0.7rem 0;
+  margin-inline-start: 1.4rem;
+}
+/* Bio End */
