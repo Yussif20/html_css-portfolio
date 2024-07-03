@@ -53,6 +53,7 @@ body {
   background-color: var(--color-background);
   color: var(--color-text);
   font-family: var(--font-family-raleway);
+  overflow-x: hidden; /*to hide the horizontal scrolling */
 }
 a {
   color: inherit;
@@ -204,15 +205,15 @@ ul {
 .bio__name {
   font-weight: var(--font-weight-semi-bold);
 }
-.bio__github,
-.bio__linkedin {
+.link__github,
+.link__linkedin {
   font-size: var(--font-size-24);
   color: gray;
 }
-.bio__github:hover {
+.link__github:hover {
   color: #171515;
 }
-.bio__linkedin:hover {
+.link__linkedin:hover {
   color: #0a66c2;
 }
 .bio__links {
@@ -361,3 +362,24 @@ ul {
   scroll-snap-align: start;
 }
 /* Clients End */
+/* Contacts Start  */
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20rem;
+  align-items: center;
+}
+.contact__description {
+  font-size: var(--font-size-20);
+  line-height: 1.9;
+}
+.contact__email {
+  text-decoration: underline;
+  font-weight: var(--font-weight-bold);
+  margin: 2.5rem 0;
+}
+.contact__socials {
+  display: flex;
+  gap: 1.6rem;
+}
+/* Contacts End  */
