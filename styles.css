@@ -101,6 +101,15 @@ ul {
   max-width: calc(var(--container-width) + var(--gutter) + var(--gutter));
   padding-inline: var(--gutter);
 }
+.video__loop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.08;
+  z-index: -2;
+}
 /* Global styles end */
 /* Start Header Styles */
 .header {
@@ -281,3 +290,12 @@ ul {
   text-shadow: 0 0 2px var(--color-green);
 }
 /* Skills End */
+/* Media Start  */
+.media {
+  align-items: center;
+  justify-content: center;
+}
+.media__video {
+  max-width: 100%;
+}
+/* Media End  */
