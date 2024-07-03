@@ -59,6 +59,9 @@ a {
   text-decoration: none;
   display: inline-block;
 }
+img {
+  max-width: 100%;
+}
 button {
   cursor: pointer;
   border: none;
@@ -299,3 +302,45 @@ ul {
   max-width: 100%;
 }
 /* Media End  */
+/* Project Start  */
+.projects__data {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 7.4rem;
+  row-gap: 7.5rem;
+}
+.project__pic {
+  box-shadow: 0 0 0.5 rgba(0, 0, 0, 0.2);
+}
+.project__info {
+  align-self: center;
+}
+.project__title {
+  font-size: var(--font-size-65);
+  font-weight: var(--font-weight-semi-bold);
+}
+.project__description {
+  font-size: var(--font-size-20);
+  line-height: 1.5;
+  margin: 2.4rem 0;
+}
+.project__link {
+  color: var(--color-blue);
+  font-family: var(--font-family-poppins);
+  font-weight: var(--font-weight-semi-bold);
+  margin-top: 2.3rem;
+}
+.project__link:hover,
+.project__link:active {
+  text-decoration: underline;
+}
+.project__link::after {
+  content: "";
+  display: inline-block;
+  background-image: url(images/external-icon.png);
+  width: 1.4rem;
+  height: 1.4rem;
+  background-size: contain;
+  margin-left: 0.6rem;
+}
+/* Project End  */
