@@ -412,3 +412,10 @@ form:invalid::after {
   font-size: var(--font-size-38);
 }
 /* Contacts End  */
+/* Footer Start  */
+.footer {
+  font-size: var(--font-size-15);
+  padding: 1rem 0;
+  border-top: 0.1rem solid var(--color-black);
+}
+/* Footer End  */
