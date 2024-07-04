@@ -224,19 +224,36 @@
           </h2>
           <form action="results.html">
             <div class="contact__inputs">
-              <input type="text" class="contact__input" />
-              <input type="tel" class="contact__input" />
+              <input
+                required
+                name="fullName"
+                type="text"
+                class="contact__input"
+                placeholder="Full Name"
+              />
+              <input
+                required
+                name="telephone"
+                type="tel"
+                class="contact__input"
+                placeholder="Phone No."
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+              />
             </div>
             <textarea
+              required
               class="contact__input contact__textarea"
               name="description"
               id="description"
+              rows="1"
+              placeholder="Your Message"
             ></textarea>
-            <input type="submit" class="contact__input" />
+            <input type="submit" class="contact__button" value="Send Message" />
           </form>
         </div>
       </section>
       <!-- Contact End -->
+      <footer>Footer</footer>
     </div>
   </body>
 </html>
