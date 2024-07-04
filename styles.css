@@ -118,7 +118,9 @@ ul {
 /* Global styles end */
 /* Start Header Styles */
 .header {
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1;
   padding: 3rem 0; /* #NOTE: It makes more sense to give the padding the parent than each children element*/
   display: flex;
   justify-content: center; /* #NOTE: it fix the bug of the border not taking the full width as it centers it  */
@@ -131,6 +133,7 @@ ul {
   width: 100vw;
   border-bottom: 0.1rem solid var(--color-input-border);
   z-index: -1;
+  background-color: var(--color-background);
 }
 .navigation__list {
   display: flex;
