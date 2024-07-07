@@ -1,0 +1,47 @@
+@import "./mixins.scss";
+
+.contact {
+  @include twoColumns($column-gap: 20rem, $row-gap: 0);
+  align-items: center;
+}
+.contact__description {
+  font-size: var(--font-size-20);
+  line-height: 1.9;
+}
+.contact__email {
+  text-decoration: underline;
+  font-weight: var(--font-weight-bold);
+  margin: 2.5rem 0;
+}
+.contact__socials {
+  display: flex;
+  gap: 1.6rem;
+}
+.contact__inputs {
+  display: flex;
+  gap: 3rem;
+}
+.contact__input {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  border-bottom: 1px solid var(--color-input-border);
+  flex: 1;
+}
+.contact__textarea {
+  margin-top: 4rem;
+  width: 100%;
+}
+.contact__button {
+  font-size: var(--font-size-24);
+  font-weight: var(--font-weight-medium);
+  background-color: var(--color-link-bg);
+  color: var(--color-white);
+  padding: 1.7rem 1.8rem;
+  margin-top: 3.4rem;
+}
+form:invalid::after {
+  content: "*";
+  color: var(--color-red);
+  font-size: var(--font-size-38);
+}

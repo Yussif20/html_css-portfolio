@@ -1,0 +1,85 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 3rem 0; /* #NOTE: It makes more sense to give the padding the parent than each children element*/
+  display: flex;
+  justify-content: center; /* #NOTE: it fix the bug of the border not taking the full width as it centers it  */
+}
+.header::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  height: 100%;
+  width: 100vw;
+  border-bottom: 0.1rem solid var(--color-input-border);
+  z-index: -1;
+  background-color: var(--color-background);
+}
+.navigation__list {
+  display: flex;
+  gap: 2rem;
+}
+.navigation__link:link,
+.navigation__link:visited {
+  font-weight: var(--font-weight-semi-bold);
+}
+.navigation__link:hover,
+.navigation__link:active {
+  text-decoration: underline;
+  color: var(--color-text);
+}
+.container:has(#bio:target) .navigation__bio,
+.container:has(#skills:target) .navigation__skills,
+.container:has(#media:target) .navigation__media,
+.container:has(#projects:target) .navigation__projects,
+.container:has(#clients:target) .navigation__clients,
+.container:has(#contact:target) .navigation__contact {
+  color: var(--color-blue);
+  text-decoration: underline;
+  font-weight: var(--font-weight-bold);
+}
+.burger-menu__checkbox {
+  display: none;
+}
+
+/* Toggle */
+.toggle {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+}
+.toggle-title {
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weight-medium);
+}
+.toggle__checkbox {
+  display: none;
+}
+.toggle__label {
+  position: relative;
+  display: block;
+  background-color: var(--color-black);
+  width: 4.5rem;
+  height: 2.1rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  padding: 0.3rem 0.4rem;
+  transition: 0.3s;
+}
+.toggle__label::after {
+  content: "";
+  transition: 0.3s;
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background-color: var(--color-white);
+}
+.toggle__checkbox:checked + .toggle__label {
+  background-color: var(--color-white);
+}
+.toggle__checkbox:checked + .toggle__label::after {
+  background-color: var(--color-green);
+  transform: translateX(2.1rem);
+}
