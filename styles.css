@@ -471,6 +471,7 @@ html:has(.toggle__checkbox:checked) {
   }
   .project__data {
     flex-direction: column;
+    align-items: center;
     justify-items: center;
   }
   .project__data:not(:last-child) {
