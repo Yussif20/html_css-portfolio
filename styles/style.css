@@ -522,7 +522,7 @@ html:has(.toggle__checkbox:checked) {
     font-size: 8px;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 767px) {
   .container {
     row-gap: 8rem;
   }
@@ -561,7 +561,7 @@ html:has(.toggle__checkbox:checked) {
     order: -1;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 576px) {
   .header {
     padding: 0;
   }
