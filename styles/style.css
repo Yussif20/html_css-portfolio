@@ -11,6 +11,8 @@
   --color-green: #03a696;
   --color-grey: #f6f6f6;
   --color-dark-green: #42959b;
+  --color-linkedin: #0a66c2;
+  --color-github: #171515;
   --color-background: var(--color-white);
   --color-text: var(--color-black);
   --color-box-img: var(--color-black);
@@ -271,11 +273,11 @@ ul {
 }
 
 .link__github:hover {
-  color: #171515;
+  color: var(--color-github);
 }
 
 .link__linkedin:hover {
-  color: #0a66c2;
+  color: var(--color-linkedin);
 }
 
 .bio__links {
@@ -512,6 +514,7 @@ html:has(.toggle__checkbox:checked) {
   --color-link-bg: var(--color-green);
   --color-grey: #080808;
   --color-input-border: var(--color-white);
+  --color-github: #fafafa;
 }
 
 @media (max-width: 1000px) {
@@ -558,7 +561,7 @@ html:has(.toggle__checkbox:checked) {
     order: -1;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .header {
     padding: 0;
   }
@@ -603,5 +606,13 @@ html:has(.toggle__checkbox:checked) {
   }
   .toggle {
     padding: 3rem 0;
+  }
+  .bio__heading,
+  .bio__objective {
+    text-align: center;
+  }
+  .bio__buttons {
+    display: flex;
+    justify-content: space-around;
   }
 }/*# sourceMappingURL=style.css.map */

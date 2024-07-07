@@ -42,7 +42,7 @@
     order: -1;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .header {
     padding: 0;
   }
@@ -87,5 +87,14 @@
   }
   .toggle {
     padding: 3rem 0;
+  }
+
+  .bio__heading,
+  .bio__objective {
+    text-align: center;
+  }
+  .bio__buttons {
+    display: flex;
+    justify-content: space-around;
   }
 }
