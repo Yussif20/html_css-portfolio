@@ -1,21 +1,78 @@
-.skills__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 5rem;
+.skills-section {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: var(--color-background);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.skills__title {
-  font-size: var(--font-size-38);
-  font-weight: var(--font-weight-semi-bold);
+
+.skills-section h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
-.skills__years {
-  display: inline-block;
-  font-weight: var(--font-weight-regular);
-  margin-top: 1rem;
+
+.skills {
+  display: flex;
+  padding: 0 20rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.skills__item {
-  transition: var(--transition-timing);
-  user-select: none;
+
+.skill {
+  border-radius: 1.2rem;
+  padding: 1.2rem;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.skills__item:hover {
-  text-shadow: 0 0 2px var(--color-green);
+
+.skill svg {
+  width: 60px;
+  height: 60px;
+}
+
+.skill p {
+  margin-top: 10px;
+  font-size: 1.4rem;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  // .skill svg {
+  //   width: 50px;
+  //   height: 50px;
+  // }
+
+  // .skill p {
+  //   font-size: 0.9rem;
+  // }
+}
+
+.skill-html {
+  fill: var(--color-html);
+}
+
+.skill-css {
+  fill: var(--color-css);
+}
+
+.skill-javascript {
+  fill: var(--color-javascript);
+}
+
+.skill-reactjs {
+  fill: var(--color-reactjs);
+}
+
+.skill-github {
+  fill: var(--color-github);
+}
+
+.skill-python {
+  fill: var(--color-python);
 }
