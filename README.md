@@ -26,8 +26,8 @@ This portfolio website is a representation of my skills in frontend web developm
 
 ## Screenshot
 
-Here is some screenshot of the portfolio website:
-[screenshots](./images/screenshot.png)
+Here is a screenshot of the portfolio website:
+[Full page screenshot](./images/screenshot.png)
 
 ## Features
 
