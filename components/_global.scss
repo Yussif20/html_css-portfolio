@@ -22,7 +22,7 @@
 .section--with-bg::before {
   content: "";
   position: absolute;
-  width: 100vw; /*  To make it take the full width  */
+  width: 120%;
   height: 100%;
   background-color: var(--color-grey);
   justify-self: center;
@@ -38,8 +38,7 @@
   display: grid;
   row-gap: 11rem;
   margin: 0 auto;
-  max-width: calc(var(--container-width) + var(--gutter) + var(--gutter));
-  padding-inline: var(--gutter);
+  max-width: 90%;
 }
 .video__loop {
   position: fixed;

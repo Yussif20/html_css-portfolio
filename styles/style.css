@@ -121,7 +121,7 @@ ul {
 .section--with-bg::before {
   content: "";
   position: absolute;
-  width: 100vw; /*  To make it take the full width  */
+  width: 120%;
   height: 100%;
   background-color: var(--color-grey);
   justify-self: center;
@@ -139,8 +139,7 @@ ul {
   display: grid;
   row-gap: 11rem;
   margin: 0 auto;
-  max-width: calc(var(--container-width) + var(--gutter) + var(--gutter));
-  padding-inline: var(--gutter);
+  max-width: 90%;
 }
 
 .video__loop {
@@ -592,6 +591,9 @@ html:has(.toggle__checkbox:checked) {
     justify-self: center;
     margin-bottom: 4rem;
   }
+  .bio-data {
+    text-align: center;
+  }
   .project__data {
     flex-direction: column;
     align-items: center;
@@ -620,6 +622,9 @@ html:has(.toggle__checkbox:checked) {
   .header {
     padding: 0;
   }
+  .header::before {
+    max-height: 100%;
+  }
   .burger-menu {
     display: flex;
     flex-direction: column;
@@ -646,8 +651,8 @@ html:has(.toggle__checkbox:checked) {
   .navigation {
     position: absolute;
     background-color: var(--color-background);
-    width: 100vw;
-    padding: 3rem 0;
+    padding: 1.5rem 0;
+    min-width: 100%;
     border-bottom: 0.1rem solid var(--color-text);
     top: 0;
     z-index: -2;
@@ -673,21 +678,16 @@ html:has(.toggle__checkbox:checked) {
 }
 @media (max-width: 500px) {
   .container {
-    min-width: 100vw;
-    padding: 0;
+    min-width: 95%;
   }
   .header {
-    padding: 0 0.5rem;
     min-width: 100%;
+  }
+  .header::before {
+    padding: 0 0.5rem;
+    min-width: 110%;
   }
   .navigation {
-    padding: 2rem 0.5rem;
-    width: 100%;
-  }
-}
-@media (max-width: 500px) {
-  .header::before {
-    min-width: 100%;
-    max-height: 100%;
+    padding: 2.2rem 0.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
